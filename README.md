@@ -2,7 +2,11 @@
 
 IssueLens 根据真实 Java Issue 的标题、正文和修复前源码索引，检索方法级候选，可选地通过 LLM 重排，并展示可追溯的源码证据及核验状态。它不自动修复 Bug，不保证找到全部真实修改方法，也不把源码事实匹配当成 Bug 根因证明。
 
-**许可证：[Apache License 2.0](LICENSE)（Apache-2.0）。** 维护者已确认拥有全部拟发布代码的公开发布权利。正式GitHub地址与完整实验包的再分发范围另行确认；本次只准备本地首次提交，不自动提交或推送。请先阅读 [发布检查表](docs/github-release-checklist.md)。
+**许可证：[Apache License 2.0](LICENSE)（Apache-2.0）。** 项目维护者已确认拥有拟发布代码的公开发布权利。
+
+**项目仓库：** https://github.com/arielk-041022/IssueLens
+
+本仓库公开项目源码、必要的测试和经筛选的实验资料。部分冻结实验的原始输入、Ground Truth 及第三方数据未包含在公开版本中，相关再分发范围以实际授权为准。详见[实验导航](docs/experiments.md)及[第三方与 AI 使用说明](docs/third-party-and-ai.md)。
 
 ## 能力与入口
 
