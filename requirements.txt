@@ -1,0 +1,3 @@
+# Minimal Python CLI / offline unit tests. Python >= 3.10.
+# Experimental SDKs, tokenizer runtimes and plotting tools are not CLI dependencies.
+jieba==0.42.1

@@ -1,0 +1,43 @@
+{
+  "schema_version": "bm25-specification-v1",
+  "artifact_acceptance_status": "PENDING_ARTIFACT_ACCEPTANCE",
+  "specification_status": "FROZEN_BEFORE_SYNTHETIC_RANKING",
+  "spec": {
+    "protocol_id": "EXP001-B2-BM25_METADATA_V1",
+    "fields": [
+      "name",
+      "class",
+      "signature",
+      "file",
+      "annotations",
+      "strings",
+      "calls"
+    ],
+    "field_join": "LF; array elements joined by LF; preserve order, duplicates and empty strings",
+    "field_weights": "NONE; every token occurrence has unit TF weight",
+    "tokenizer": "ASCII camel boundaries (?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z]); Unicode [^\\W_]+ runs; str.lower",
+    "digits": "retained within runs; no letter/digit split except digit-to-ASCII-uppercase camel boundary",
+    "normalization": "NONE; no NFC, casefold, stopwords, stemming, expansion, whole-identifier augmentation or truncation",
+    "query_terms": "unique terms sorted by Python Unicode code-point order; no query TF weight",
+    "tf": "token occurrence count in concatenated method document",
+    "df": "number of all catalog documents containing the term",
+    "idf": "ln(1 + (N - df + 0.5)/(df + 0.5)); natural log via log1p",
+    "score": "fsum(idf(t)*tf(t,d)*(k1+1)/(tf(t,d)+k1*(1-b+b*dl/avgdl))) over unique query terms",
+    "k1": 1.2,
+    "b": 0.75,
+    "length": "dl includes all document tokens; avgdl=sum(dl)/N including empty documents",
+    "empty": "empty query/document or avgdl=0 gives zero scores; N=0 gives EMPTY",
+    "order": "descending unrounded finite binary64 score, then original catalog ordinal ascending",
+    "candidate_scope": "ALL_METHODS_IN_VALIDATED_COMPLETE_B1_CATALOG; includes bodyless methods",
+    "real_case_execution": "DISABLED; fixture-* only; no tuning on the four real cases"
+  },
+  "spec_sha256": "f28889a3671eccef24c63ca507c348cca586bebde0da3cab3702a3f251cdfeda",
+  "fixed_cohort_n": 4,
+  "candidate_k": 5,
+  "independent_test_set": false,
+  "real_ranking_authorized": false,
+  "four_case_parameter_tuning": false,
+  "rule_scorer_modified": false,
+  "supersedes_bm25_placeholder_only": "EXP001-B1-v1; original protocol remains unmodified",
+  "llm_only": "NOT_IMPLEMENTED"
+}

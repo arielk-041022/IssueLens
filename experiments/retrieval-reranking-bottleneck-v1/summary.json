@@ -1,0 +1,93 @@
+{
+  "classification": "EXPLORATORY_POST_HOC",
+  "offline_known_GT": {
+    "GT_count": 25,
+    "BM25_Top50_GT": 8,
+    "Hierarchical_Top50_GT": 12,
+    "issues": 5
+  },
+  "paired_cases": [
+    "LANG-1750",
+    "LANG-1757",
+    "LANG-1759"
+  ],
+  "paired_aggregate": {
+    "A": {
+      "GT_count": 22,
+      "pool_GT": 5,
+      "final_hits": 4,
+      "theoretical_top5": 5,
+      "gap": 1,
+      "retrieval_missed": 17,
+      "pool_GT_not_in_top5": 1,
+      "capacity_limit": 0,
+      "avoidable_reranking_gap": 1,
+      "issues": 3
+    },
+    "B": {
+      "GT_count": 22,
+      "pool_GT": 9,
+      "final_hits": 4,
+      "theoretical_top5": 7,
+      "gap": 3,
+      "retrieval_missed": 13,
+      "pool_GT_not_in_top5": 5,
+      "capacity_limit": 2,
+      "avoidable_reranking_gap": 3,
+      "issues": 3
+    }
+  },
+  "coverage": [
+    {
+      "case_id": "LANG-1743",
+      "GT_count": null,
+      "BM25_Top50_GT": null,
+      "Hierarchical_Top50_GT": null
+    },
+    {
+      "case_id": "LANG-1745",
+      "GT_count": 1,
+      "BM25_Top50_GT": 1,
+      "Hierarchical_Top50_GT": 1
+    },
+    {
+      "case_id": "LANG-1747",
+      "GT_count": null,
+      "BM25_Top50_GT": null,
+      "Hierarchical_Top50_GT": null
+    },
+    {
+      "case_id": "LANG-1750",
+      "GT_count": 20,
+      "BM25_Top50_GT": 3,
+      "Hierarchical_Top50_GT": 7
+    },
+    {
+      "case_id": "LANG-1753",
+      "GT_count": 2,
+      "BM25_Top50_GT": 2,
+      "Hierarchical_Top50_GT": 2
+    },
+    {
+      "case_id": "LANG-1757",
+      "GT_count": 1,
+      "BM25_Top50_GT": 1,
+      "Hierarchical_Top50_GT": 1
+    },
+    {
+      "case_id": "LANG-1759",
+      "GT_count": 1,
+      "BM25_Top50_GT": 1,
+      "Hierarchical_Top50_GT": 1
+    },
+    {
+      "case_id": "LANG-1761",
+      "GT_count": null,
+      "BM25_Top50_GT": null,
+      "Hierarchical_Top50_GT": null
+    }
+  ],
+  "GT_mapping_count": 25,
+  "new_API_calls": 0,
+  "retrieval_reexecution": false
+}

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "acceptance.json": "f17853356e6ca76d40ff073d9643327f9c8e7bc40e441cf8d2af800376bf1ff2",
+    "inputs.json": "67c15dca902f3d182694d34595f4e59bba923bd54aacf05acdde9effba055881",
+    "LANG-1610.md": "6f60726e21634f0a2e1d39e8e33d14ec32a94be87a9eb539132e715da2f434a1",
+    "README.md": "94c9a845d08d683f542b9aa1b501eae9d1805a698abfb8a3ae30966106c39797",
+    "../../src/localization_evidence_card.py": "8e47b22de4a2b22776f00dda7d13f2ae118164564c48ea58061999a1e46a8b08",
+    "../../tests/test_localization_evidence_card.py": "57c853310d622d90824eee49ca7af41e905b7176b017894f35856b5acde5491c",
+    "../../src/evidence_trace_manifest.py": "e874d92495e9ca2f2cc8ed79fc1c96661e86e2df9f4e20608785cac94090878a",
+    "../../src/evidence_validator.py": "86d90c773e944e7f07b8f56d21c697b831b6982bc257610a870b4db9f8215f15"
+  }
+}

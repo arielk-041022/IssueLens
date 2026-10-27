@@ -1,0 +1,545 @@
+{
+  "purpose": "GitHub首次发布明确白名单；仅允许按清单逐文件暂存，不自动提交或推送",
+  "date": "2026-10-27",
+  "license": "Apache-2.0",
+  "file_count": 129,
+  "category_counts": {
+    "Java索引器源码、测试与POM": 5,
+    "Python核心源码及现有离线入口": 41,
+    "Python测试": 30,
+    "README与安装配置": 4,
+    "合成测试所需公开协议": 2,
+    "实验汇总、证据与失败阅读材料": 18,
+    "已有离线辅助脚本": 13,
+    "技术文档及发布清单": 14,
+    "真实离线演示说明": 1,
+    "许可证": 1
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "category": "README与安装配置"
+    },
+    {
+      "path": "LICENSE",
+      "category": "许可证"
+    },
+    {
+      "path": "README.md",
+      "category": "README与安装配置"
+    },
+    {
+      "path": "README_CEA.md",
+      "category": "README与安装配置"
+    },
+    {
+      "path": "analyze_frozen_bm25_topk.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "analyze_issuelens_recall_cost.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "compare_class_aware_five_cases.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "compare_class_aware_top40.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "data/bm25_protocol.exp001_b2.v1.json",
+      "category": "合成测试所需公开协议"
+    },
+    {
+      "path": "data/experiment_protocol.exp001_b1.v1.json",
+      "category": "合成测试所需公开协议"
+    },
+    {
+      "path": "docs/case-004-tcs-find-by-name.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/controlled_authorization.exp001_c1.v1.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/data001_d2_jsoup2130_freeze_v1.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/data001_d4b_jsoup2266_freeze_v1.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/evidence_validation.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/experiments.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/github-release-checklist.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/github-release-files.json",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/index_schema_v2.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/issue_input_cli.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/java-source-v2.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/metadata_localization_protocol.v1.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/real_issuance.exp001_c2a.v1.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "docs/third-party-and-ai.md",
+      "category": "技术文档及发布清单"
+    },
+    {
+      "path": "examples/lang1610/README.md",
+      "category": "真实离线演示说明"
+    },
+    {
+      "path": "experiments/competition-evidence-pack-v1/demo.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/competition-evidence-pack-v1/limitations.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/competition-evidence-pack-v1/manifest.sha256",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/competition-evidence-pack-v1/reproducibility.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/independent-eval-v1/prediction-environment/output/unified-scoring-v1-report-v2/audit-report.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/independent-eval-v1/prediction-environment/output/unified-scoring-v1-report-v2/manifest.sha256.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/independent-eval-v1/prediction-environment/output/unified-scoring-v1-report-v2/summary.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/issuelens_structural_trial_v2.py",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/localization-evidence-card-v1/LANG-1610.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/localization-evidence-card-v1/README.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/localization-evidence-card-v1/manifest.sha256.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/retrieval-reranking-bottleneck-v1/analysis.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/retrieval-reranking-bottleneck-v1/chapter6-conclusion.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/retrieval-reranking-bottleneck-v1/manifest.sha256.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/retrieval-reranking-bottleneck-v1/summary.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/validator-fault-injection-v1/manifest.sha256.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/validator-fault-injection-v1/report.md",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "experiments/validator-fault-injection-v1/summary.json",
+      "category": "实验汇总、证据与失败阅读材料"
+    },
+    {
+      "path": "gson_bm25_diagnostic.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "java-indexer/pom.xml",
+      "category": "Java索引器源码、测试与POM"
+    },
+    {
+      "path": "java-indexer/src/main/java/Main.java",
+      "category": "Java索引器源码、测试与POM"
+    },
+    {
+      "path": "java-indexer/src/main/java/MethodIdentityV2.java",
+      "category": "Java索引器源码、测试与POM"
+    },
+    {
+      "path": "java-indexer/src/test/java/MainTest.java",
+      "category": "Java索引器源码、测试与POM"
+    },
+    {
+      "path": "java-indexer/src/test/java/MethodIdentityV2Test.java",
+      "category": "Java索引器源码、测试与POM"
+    },
+    {
+      "path": "output_contract_v2.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "pilot_output_contract_v2_adapter.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "requirements.txt",
+      "category": "README与安装配置"
+    },
+    {
+      "path": "score_issuelens_pilot_posthoc_v2.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "src/baseline_producers.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/bm25_baseline.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/bm25_candidate_selection.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/brd_rerank_strategy.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/brd_rerank_strategy_v2.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/candidate_evidence_adapter.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/candidate_shortlist.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/cea_decision_gate.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/cea_evidence_audit.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/controlled_authorization.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/controlled_llm_executor.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/dataset_registry.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/deepseek_budget_client.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/evidence_replay.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/evidence_trace_manifest.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/evidence_validator.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/experiment_adapter.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/high_recall_candidates.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/issue_input.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/llm_rerank_protocol.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/llm_reranker.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/llm_reranker_v5.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/llm_reranker_v5_backup.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/localization_evidence_card.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/make_figures.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/metadata_experiment.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/metadata_experiment_v2.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/metadata_ranking_runner.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/metrics.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/metrics_pre_ablation.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retrieval_reranking_bottleneck.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_pre_ablation.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_v3_clean.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_v5_5cases.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_v5_with_layer.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_v6_6cases.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_v6_backup.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/retriever_v7_backup.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/strict_evaluation.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "src/verifier.py",
+      "category": "Python核心源码及现有离线入口"
+    },
+    {
+      "path": "test_issuelens_v2_contract.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "test_output_contract_v2.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "test_output_contract_v2_real_catalog.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "test_pilot_output_contract_v2_adapter.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "test_pilot_v2_offline_e2e.py",
+      "category": "已有离线辅助脚本"
+    },
+    {
+      "path": "tests/test_baseline_producers.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_bm25_baseline.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_bm25_candidate_selection.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_brd_live_adapter.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_brd_live_adapter_v2.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_brd_rerank_strategy.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_candidate_evidence_adapter.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_candidate_pipeline_integration.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_candidate_shortlist.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_cea_decision_gate.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_cea_evidence_audit.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_controlled_authorization.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_controlled_llm_executor.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_dataset_registry.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_deepseek_budget_client.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_evidence_replay_local.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_evidence_trace_manifest.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_evidence_validator.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_experiment_adapter.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_high_recall_candidates.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_identity_v2_consumers.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_issue_input_cli.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_llm_cli_regressions.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_llm_rerank_protocol.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_localization_evidence_card.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_metadata_experiment.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_metadata_ranking_runner.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_real_issuance.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_retrieval_reranking_bottleneck.py",
+      "category": "Python测试"
+    },
+    {
+      "path": "tests/test_strict_evaluation.py",
+      "category": "Python测试"
+    }
+  ],
+  "exclusions": {
+    "private_data": "GT、diff、private与未经授权原始Issue数据",
+    "third_party": "工作仓库、Git对象、Tokenizer资产和虚拟环境",
+    "local_artifacts": "target、output、报告、截图、视频、压缩包和历史请求日志",
+    "personal_paths": "6份历史协议/记录、旧检查脚本及另发现的转义路径案例记录，原件不改"
+  },
+  "demo_prerequisites": "用户主动取得指定修复前源码并由公开索引器生成新索引；运行无需模型API，冷启动需源码及构建依赖",
+  "frozen_bundle_note": "公开摘要不是完整原始实验包，部分manifest引用本地未公开输入",
+  "code_publication_rights": "OWNER_CONFIRMED"
+}

@@ -1,0 +1,323 @@
+{
+  "API_calls": 0,
+  "NOT_APPLICABLE": 2,
+  "explicit_inconsistencies_detected": 7,
+  "faults_unverifiable": 3,
+  "normal_local_pass": 2,
+  "out_of_scope_acceptance": "H_retrusted_signature is actual PASS under re-trusted index; excluded from protocol-supported detection denominator, not hidden",
+  "scenarios": [
+    {
+      "actual_class": "MATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MATCH",
+      "group": "A",
+      "id": "A_real",
+      "injected_fault": false,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "METHOD_ID_UNAVAILABLE",
+        "METHOD_LOCATION_UNAVAILABLE",
+        "UNSUPPORTED_RAW_MAPPING"
+      ],
+      "report_path": "scenarios\\A_real\\validator-report.json",
+      "report_sha256": "bbcca6331bc7b3db567682deee5ae95ace02636ad91e15a9c823842f3eea22dc",
+      "selected_evidence": {
+        "evidence_id": "sha256:8945655d36645e95efdfad7625cf37effc9613e3521e9aac92c1a2be2d135f0c",
+        "reason_code": "ALL_LOCAL_SOURCE_CHECKS_PASSED",
+        "status": "VERIFIED",
+        "verdict": "PASS"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MATCH",
+      "group": "A",
+      "id": "A_fixture",
+      "injected_fault": false,
+      "matches_expectation": true,
+      "original_repository_verdict": "PASS",
+      "reason_codes": [],
+      "report_path": "scenarios\\A_fixture\\validator-report.json",
+      "report_sha256": "4108a46a470f0c6293edb539d200ae88ecca2ba9f6b16dbd82ab7ea6fb45b8dc",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "ALL_LOCAL_SOURCE_CHECKS_PASSED",
+        "status": "VERIFIED",
+        "verdict": "PASS"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "B",
+      "id": "B_source",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "METHOD_ID_UNAVAILABLE",
+        "SOURCE_HASH_MISMATCH",
+        "UNSUPPORTED_RAW_MAPPING"
+      ],
+      "report_path": "scenarios\\B_source\\validator-report.json",
+      "report_sha256": "0833a65f48fffaa166175ce71f66c4193fbd85b52c4c4b4b4716d3f038f165fb",
+      "selected_evidence": {
+        "evidence_id": "sha256:8945655d36645e95efdfad7625cf37effc9613e3521e9aac92c1a2be2d135f0c",
+        "reason_code": "SOURCE_HASH_MISMATCH",
+        "status": "STALE_SOURCE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "C",
+      "id": "C_snippet",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "EXACT_SNIPPET_MISMATCH"
+      ],
+      "report_path": "scenarios\\C_snippet\\validator-report.json",
+      "report_sha256": "b9a3ee605b1069d4fc92ab0a540d3170411ef8c9d66b24feaf8a4090abdb8a87",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "EXACT_SNIPPET_MISMATCH",
+        "status": "SNIPPET_MISMATCH",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "C",
+      "id": "C_range",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "EVIDENCE_OUTSIDE_METHOD"
+      ],
+      "report_path": "scenarios\\C_range\\validator-report.json",
+      "report_sha256": "c9bb4e3a263986a24e51e06a3d4368d73642f89b92e78404db876a3caf441516",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "EVIDENCE_OUTSIDE_METHOD",
+        "status": "OWNERSHIP_ERROR",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "D",
+      "id": "D_method_id",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "METHOD_ID_OWNERSHIP_MISMATCH"
+      ],
+      "report_path": "scenarios\\D_method_id\\validator-report.json",
+      "report_sha256": "511b857b2aeed4edc2d0e7acf76df61dec6661e6998379ac2f3429b16f90b67b",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "METHOD_ID_OWNERSHIP_MISMATCH",
+        "status": "OWNERSHIP_ERROR",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "D",
+      "id": "D_evidence_owner",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "EVIDENCE_ID_MISMATCH"
+      ],
+      "report_path": "scenarios\\D_evidence_owner\\validator-report.json",
+      "report_sha256": "63169f98056b75fa84701d1f0878a97a8d30b292851f835e1cc1898f61e888b3",
+      "selected_evidence": {
+        "evidence_id": "sha256:38dda06ac2f2a0935ff00c1d0a194a3ab279ac90a06ecf044076336533f338ae",
+        "reason_code": "EVIDENCE_ID_MISMATCH",
+        "status": "EVIDENCE_ID_MISMATCH",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "E",
+      "id": "E_source_hash",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "SOURCE_HASH_MISMATCH"
+      ],
+      "report_path": "scenarios\\E_source_hash\\validator-report.json",
+      "report_sha256": "857a4598b89a4f91ec6bfb1945938da1f74fa67827c31ceb997d6091013504a8",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "SOURCE_HASH_MISMATCH",
+        "status": "STALE_SOURCE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MISMATCH",
+      "applicability": "SUPPORTED",
+      "expected_class": "MISMATCH",
+      "group": "E",
+      "id": "E_trusted_pin",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "PINNED_INPUT_HASH_MISMATCH"
+      ],
+      "report_path": "scenarios\\E_trusted_pin\\validator-report.json",
+      "report_sha256": "7a7ead6e2ad32c284dafdd69dcee33dd653a1c83ca39c400107ae87ca3cc6674",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "SELECTED_EVIDENCE_NOT_UNIQUE_OR_MISSING",
+        "status": "UNVERIFIABLE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "UNVERIFIABLE",
+      "applicability": "SUPPORTED",
+      "expected_class": "UNVERIFIABLE",
+      "group": "F",
+      "id": "F_snippet",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "INVALID_INDEX_SCHEMA"
+      ],
+      "report_path": "scenarios\\F_snippet\\validator-report.json",
+      "report_sha256": "06eb3e8817674041d09e8aeff9f09ebba0d310f9193ac08327a58de631d4d0fb",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "SELECTED_EVIDENCE_NOT_UNIQUE_OR_MISSING",
+        "status": "UNVERIFIABLE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "UNVERIFIABLE",
+      "applicability": "SUPPORTED",
+      "expected_class": "UNVERIFIABLE",
+      "group": "F",
+      "id": "F_range",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "MISSING_EVIDENCE_RANGE"
+      ],
+      "report_path": "scenarios\\F_range\\validator-report.json",
+      "report_sha256": "543f3579cd256818b873799bc421080cca189d46aa48a24e528b8116ccaa1f54",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "MISSING_EVIDENCE_RANGE",
+        "status": "UNVERIFIABLE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "UNVERIFIABLE",
+      "applicability": "SUPPORTED",
+      "expected_class": "UNVERIFIABLE",
+      "group": "F",
+      "id": "F_selected",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "PASS",
+      "reason_codes": [],
+      "report_path": "scenarios\\F_selected\\validator-report.json",
+      "report_sha256": "aa01ae4d08dfe4456c26c43d28f1178d7b7a8d1c75e87a0ae70f155b478075ec",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "SELECTED_EVIDENCE_NOT_UNIQUE_OR_MISSING",
+        "status": "UNVERIFIABLE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "UNVERIFIABLE",
+      "applicability": "NOT_APPLICABLE",
+      "expected_class": "UNVERIFIABLE",
+      "group": "G",
+      "id": "G_v2",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "FAIL",
+      "reason_codes": [
+        "UNSUPPORTED_INDEX_CONFIGURATION"
+      ],
+      "report_path": "scenarios\\G_v2\\validator-report.json",
+      "report_sha256": "369833bdd691a0a0c8fad70e3c13b51e751bc99bfbc8e0525343e98ac5ca31c9",
+      "selected_evidence": {
+        "evidence_id": "sha256:7e40bfe3a977a091ab8cb3a018397acbb619e11d9ddd3fdc12e0e8dda502174d",
+        "reason_code": "PRECONDITION_FAILED",
+        "status": "UNVERIFIABLE",
+        "verdict": "FAIL"
+      },
+      "trust_boundary_note": null
+    },
+    {
+      "actual_class": "MATCH",
+      "applicability": "NOT_APPLICABLE",
+      "expected_class": "MATCH",
+      "group": "D-boundary",
+      "id": "H_retrusted_signature",
+      "injected_fault": true,
+      "matches_expectation": true,
+      "original_repository_verdict": "PASS",
+      "reason_codes": [],
+      "report_path": "scenarios\\H_retrusted_signature\\validator-report.json",
+      "report_sha256": "c47e2a9a91fcdef316c889ef040e98ce7135609b21efe54167c4affe54ae67fd",
+      "selected_evidence": {
+        "evidence_id": "sha256:43696513b921239cf07072c627ee19c81ca72a90a34b9fc6f49c55aeb5691afb",
+        "reason_code": "ALL_LOCAL_SOURCE_CHECKS_PASSED",
+        "status": "VERIFIED",
+        "verdict": "PASS"
+      },
+      "trust_boundary_note": "Validator accepted a coherent but false semantic signature after repinning; no AST declaration attestation"
+    }
+  ],
+  "semantic_root_cause_proven": false,
+  "supported_controls": 2,
+  "supported_faults_erroneously_accepted": 0,
+  "supported_faults_rejected": 10,
+  "supported_injected_faults": 10,
+  "unexpected_results": [],
+  "without_validator": "Injected files remain syntactically valid/available in many cases; ID or model-protocol checks alone do not independently compare source hashes/snippets. This is a contract comparison, not a measured alternative-system benchmark."
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "experiment-infrastructure-protocol-v1",
+  "protocol_id": "EXP001-B1-v1",
+  "authority": "Current user EXP001-B1 instruction; infrastructure and synthetic tests only",
+  "artifact_acceptance_status": "PENDING_ARTIFACT_ACCEPTANCE",
+  "real_prediction_execution_authorized": false,
+  "case_ids": ["jsoup-2130", "jsoup-2266", "jsoup-2068", "jsoup-2078"],
+  "fixed_n": 4,
+  "candidate_k": 5,
+  "cohort_role": "EXPLORATORY_EVALUATION_ONLY",
+  "independent_test_set": false,
+  "cohort_parameter_tuning": false,
+  "source_task": "PRE_FIX_EXISTING_METHOD_LOCALIZATION",
+  "identity_fields": ["repo_id", "source_snapshot_id", "file_path", "method_id"],
+  "include_bodyless_available_methods": true,
+  "candidate_ordinal": "Original v2 file/class/method traversal; never generated from GT",
+  "rule_weights": "UNCHANGED; no Rule producer implemented or executed by B1",
+  "llm_prompt": "UNCHANGED; no LLM producer or paid API implemented or executed by B1",
+  "llm_only": "NOT_IMPLEMENTED",
+  "bm25": {
+    "implementation_status": "NOT_IMPLEMENTED",
+    "specification_status": "PENDING_SEPARATE_REVIEW",
+    "formula": "NOT_FROZEN",
+    "fields": "NOT_FROZEN",
+    "tokenizer": "NOT_FROZEN",
+    "parameters": "NOT_FROZEN"
+  },
+  "input_contract": {
+    "name": "TITLE_LF_LF_ORIGINAL_BODY_V1",
+    "query": "title + LF + LF + original_body; exact UTF-8 bytes, no strip/normalization",
+    "forbidden_context": ["GT sidecars", "accepted targets", "patches", "fixed source or tests", "review notes"],
+    "prediction_request": "Explicit allowlist of Issue string, complete catalog/features and integrity hashes"
+  },
+  "stages": [
+    "Independent evaluation preflight: audit four GT/snapshot bindings, no predictions read",
+    "GT-free preparation: frozen Issue input and v2 source/index only",
+    "Isolated synthetic producer: no GT capability, no API secrets/network/subprocess",
+    "Seal prediction.json, receipt, raw request, producer source and worker logs",
+    "Independent evaluation: externally pinned prediction hash; attach GT hash only now",
+    "Existing strict replay per snapshot, then fixed-four aggregation"
+  ],
+  "prediction_states": ["SUCCESS", "EMPTY", "INVALID_PREDICTION", "EXECUTION_ERROR"],
+  "empty_policy": "Only explicit completed EMPTY with no reported exception; interrupted/missing output is not EMPTY",
+  "authoritative_metrics": ["Strict Method Top-1", "Strict Method Top-5", "Strict File Top-1", "MRR"],
+  "separate_diagnostics": ["first_stage_recall_at5", "fixed_pool_rerank with MRR@5"],
+  "failure_policy": "Any missing/ineligible/invalid/unavailable case preserves N=4 and makes authoritative aggregate INVALID_RUN/null; partial rows remain diagnostic",
+  "eligibility_coverage": "Actual eligible cases / 4, independently from the fixed planned metric denominators",
+  "usage_policy": "Absent actual provider usage is UNKNOWN; no character-to-token estimate labelled measured",
+  "telemetry_extension": ["attempts", "requests", "exceptions", "usage"],
+  "rank_artifact": {
+    "prediction_phase": "prediction-v1, GT-free",
+    "evaluation_phase": "strict-ranking-v1, produced without changing prediction order",
+    "gt_hash_attached_only_during_evaluation": true,
+    "scoring_code_sha256_role": "Existing Retriever compatibility anchor; actual producer_code_sha256 is recorded separately"
+  },
+  "security_boundary": "Trusted Python producer interface and child-process audit I/O capabilities, not an OS sandbox against hostile native code",
+  "b1_runtime_guard": "Only fixture-* producer requests; real four-case prediction is explicitly disabled",
+  "core_files_modified": false,
+  "gt_or_split_files_modified": false
+}
